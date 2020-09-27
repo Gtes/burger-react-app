@@ -5,6 +5,7 @@ import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 
 import classes from "./Layout.module.css";
 import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
+import DrawerToggle from "../Navigation/SideDrawer/DrawerToggle/DrawerToggle";
 
 class Layout extends Component {
     state = {
@@ -12,15 +13,24 @@ class Layout extends Component {
     };
 
     sideDrawerClosedHandler = () => {
-        console.log("called");
         this.setState({
             showSideDrawer: false,
         });
     };
+
+    sideDraweToggleHandler = () => {
+        this.setState((perSate) => {
+            return { showSideDrawer: !perSate.showSideDrawer };
+        });
+    };
+
     render() {
         return (
             <Aux>
-                <Toolbar></Toolbar>
+                <Toolbar
+                    drawerToggleClicked={this.sideDraweToggleHandler}
+                ></Toolbar>
+
                 <SideDrawer
                     closed={this.sideDrawerClosedHandler}
                     open={this.state.showSideDrawer}
