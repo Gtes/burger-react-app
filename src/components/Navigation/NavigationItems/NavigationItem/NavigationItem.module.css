@@ -2,7 +2,6 @@
     margin: 10px 0;
     box-sizing: border-box;
     display: block;
-    width: 100%;
 }
 
 .NavigationItem a {
@@ -15,7 +14,7 @@
 
 .NavigationItem a:hover,
 .NavigationItem a:active,
-.NavigationItem a:visited {
+.NavigationItem a:active {
     color: #40a4c8;
 }
 
@@ -32,7 +31,7 @@
         height: 100%;
         padding: 16px 10px;
         border-bottom: 4px solid transparent;
-        display: block;
+        display: inline-block;
     }
 
     .NavigationItem a:hover,
