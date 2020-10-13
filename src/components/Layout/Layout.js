@@ -5,7 +5,6 @@ import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 
 import classes from "./Layout.module.css";
 import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
-import DrawerToggle from "../Navigation/SideDrawer/DrawerToggle/DrawerToggle";
 
 class Layout extends Component {
     state = {
