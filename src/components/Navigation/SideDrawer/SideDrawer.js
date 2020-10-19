@@ -7,7 +7,6 @@ import Aux from "../../../hoc/Aux";
 import classes from "./SideDrawer.module.css";
 
 const sideDrawer = (props) => {
-    console.log(props)
     let attachClasses = [classes.SideDrawer, classes.Close];
 
     if (props.open) {
